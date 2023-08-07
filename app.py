@@ -1,9 +1,13 @@
 from flask import Flask, jsonify, request, render_template 
 app = Flask(__name__) 
 
-@app.route('/') 
-def index() : 
+@app.route('/index') 
+def index(): 
     return render_template('index.html')
+
+@app.route('/') 
+def firstpage(): 
+    return render_template("Hello world!")
 
 @app.route('/google-charts/pie-chart') 
 def google_pie_chart(): 
