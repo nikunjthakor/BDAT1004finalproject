@@ -7,7 +7,7 @@ def index():
 
 @app.route('/') 
 def firstpage(): 
-    return render_template("Hello world!")
+    return "Hello world!"
 
 @app.route('/google-charts/pie-chart') 
 def google_pie_chart(): 
