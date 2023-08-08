@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, render_template 
-app = Flask(__name__) 
+app = Flask(__name__,template_folder='Templates')
 
 @app.route('/index') 
 def index(): 
@@ -16,4 +16,3 @@ def google_pie_chart():
 
 if __name__ == '__main__':
     app.run()
-    
